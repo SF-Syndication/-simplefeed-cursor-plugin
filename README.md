@@ -11,6 +11,12 @@ Billing is through **AWS Marketplace** — not through Cursor.
 | `simplefeed-paid` | Paid MCP | `https://dsyf7237b1hl8.cloudfront.net/mcp` |
 | `simplefeed-free` | Free Discovery | `https://d3b8d1lqb9mb0.cloudfront.net/mcp` |
 
+## Install
+
+Search for **SimpleFeed** in [Cursor Marketplace](https://cursor.com/marketplace) or open **Customize** in the Cursor sidebar and install the plugin.
+
+After install, open **Settings → Features → Model Context Protocol** and enable `simplefeed-paid` or `simplefeed-free` for your plan.
+
 ## Before you connect
 
 1. **Subscribe** on AWS Marketplace:
@@ -18,46 +24,15 @@ Billing is through **AWS Marketplace** — not through Cursor.
    - [Free Discovery](https://aws.amazon.com/marketplace/pp/prodview-rj5jqhfy33ieo)
 2. **Register** using the link AWS sends after purchase. You receive an API key on the success page.
 3. **Link your account** on that page (**How to use (OAuth)**): create a login or sign in with the **same email and password** you will use in Cursor.
-4. Install this plugin (Marketplace or local), enable the MCP server for your plan, and sign in with that same email and password when prompted.
+4. In Cursor, enable the MCP server for your plan and sign in with that same email and password when prompted.
 
-Full guide: [SimpleFeed MCP for Cursor](https://d2fc02tchkjlk2.cloudfront.net/cursor-connectors-docs.html) · [Claude guide](https://d2fc02tchkjlk2.cloudfront.net/claude-connectors-docs.html)
-
-## Install from Cursor Marketplace
-
-Search for **SimpleFeed** in [Cursor Marketplace](https://cursor.com/marketplace) or open **Customize** in the Cursor sidebar and install the plugin from there.
-
-## Install locally (development / review)
-
-```bash
-git clone https://github.com/SF-Syndication/-simplefeed-cursor-plugin.git
-cd -- -simplefeed-cursor-plugin
-ln -s "$(pwd)" ~/.cursor/plugins/local/simplefeed
-```
-
-Reload Cursor (**Developer: Reload Window**), then open **Settings → Features → Model Context Protocol** and enable `simplefeed-paid` or `simplefeed-free`.
+Full guide: [SimpleFeed MCP for Cursor](https://d2fc02tchkjlk2.cloudfront.net/cursor-connectors-docs.html)
 
 ## OAuth in Cursor
 
 SimpleFeed uses OAuth 2.0 with dynamic client registration. You do **not** paste your API key into Cursor when using OAuth.
 
 When connecting, you may see a short **setup page** (Marketplace instructions) before sign-in. Use the same email and password you set on the registration **How to use (OAuth)** step.
-
-## Alternative: API key (advanced)
-
-For scripts or clients that send headers instead of OAuth, set an environment variable and use a custom `mcp.json` entry:
-
-```json
-{
-  "mcpServers": {
-    "simplefeed-paid": {
-      "url": "https://dsyf7237b1hl8.cloudfront.net/mcp",
-      "headers": {
-        "X-Api-Key": "${env:SIMPLEFEED_API_KEY}"
-      }
-    }
-  }
-}
-```
 
 ## Example prompts
 

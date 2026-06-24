@@ -24,7 +24,7 @@ Full guide: [SimpleFeed MCP for Cursor](https://d2fc02tchkjlk2.cloudfront.net/cu
 
 ## Install from Cursor Marketplace
 
-After the plugin is published, install from [Cursor Marketplace](https://cursor.com/marketplace) or submit this repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish).
+Search for **SimpleFeed** in [Cursor Marketplace](https://cursor.com/marketplace) or open **Customize** in the Cursor sidebar and install the plugin from there.
 
 ## Install locally (development / review)
 

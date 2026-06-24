@@ -1,0 +1,14 @@
+{
+  "name": "simplefeed",
+  "version": "1.0.0",
+  "description": "Search rights-cleared news and video from hundreds of publisher catalogs in Cursor",
+  "author": {
+    "name": "SimpleFeed, Inc.",
+    "email": "support@simplefeed.com"
+  },
+  "homepage": "https://www.simplefeed.com/",
+  "repository": "https://github.com/SF-Syndication/-simplefeed-cursor-plugin",
+  "license": "MIT",
+  "keywords": ["mcp", "news", "media", "search", "publishers", "journalism"],
+  "logo": "assets/logo.svg"
+}

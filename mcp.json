@@ -1,9 +1,9 @@
 {
   "mcpServers": {
-    "simplefeed-paid": {
+    "simplefeed-news": {
       "url": "https://dsyf7237b1hl8.cloudfront.net/mcp"
     },
-    "simplefeed-free": {
+    "simplefeed-news-free": {
       "url": "https://d3b8d1lqb9mb0.cloudfront.net/mcp"
     }
   }

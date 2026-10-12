@@ -8,14 +8,14 @@ Billing is through **AWS Marketplace** — not through Cursor.
 
 | Server | Plan | MCP URL |
 |--------|------|---------|
-| `simplefeed-paid` | Paid MCP | `https://dsyf7237b1hl8.cloudfront.net/mcp` |
-| `simplefeed-free` | Free Discovery | `https://d3b8d1lqb9mb0.cloudfront.net/mcp` |
+| `simplefeed-news` | Paid MCP | `https://dsyf7237b1hl8.cloudfront.net/mcp` |
+| `simplefeed-news-free` | Free Discovery | `https://d3b8d1lqb9mb0.cloudfront.net/mcp` |
 
 ## Install
 
 Search for **SimpleFeed** in [Cursor Marketplace](https://cursor.com/marketplace) or open **Customize** in the Cursor sidebar and install the plugin.
 
-After install, open **Settings → Features → Model Context Protocol** and enable `simplefeed-paid` or `simplefeed-free` for your plan.
+After install, open **Settings → Features → Model Context Protocol** and enable `simplefeed-news` or `simplefeed-news-free` for your plan.
 
 ## Before you connect
 
